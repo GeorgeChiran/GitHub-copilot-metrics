@@ -35,6 +35,7 @@
               <MetricsViewer v-if="item === itemName" :metrics="metrics" />
               <BreakdownComponent v-if="item === 'languages'" :metrics="metrics" :breakdownKey="'language'"/>
               <BreakdownComponent v-if="item === 'editors'" :metrics="metrics" :breakdownKey="'editor'"/>
+              <BreakdownComponent v-if="item === 'models'" :metrics="metrics" :breakdownKey="'models'"/>
               <CopilotChatViewer v-if="item === 'copilot chat'" :metrics="metrics" />
                 <SeatsAnalysisViewer v-if="item === 'seat analysis'" :seats="seats" />
               <ApiResponse v-if="item === 'api response'" :metrics="metrics" :seats="seats" />
@@ -103,7 +104,7 @@ export default defineComponent({
   },
   data () {
     return {
-      tabItems: ['languages', 'editors', 'copilot chat', 'api response'],
+      tabItems: ['languages', 'editors', 'models', 'copilot chat', 'api response'],
       tab: null
     }
   },

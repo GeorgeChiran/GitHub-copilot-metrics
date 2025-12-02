@@ -1,6 +1,7 @@
 class BreakdownData {
     language: string;
     editor: string;
+    models: string;
     suggestions_count: number;
     acceptances_count: number;
     lines_suggested: number;
@@ -13,6 +14,7 @@ class BreakdownData {
     constructor(data: any) {
       this.language = data.language;
       this.editor = data.editor;
+      this.models = data.models;
       this.suggestions_count = data.suggestions_count;
       this.acceptances_count = data.acceptances_count;
       this.lines_suggested = data.lines_suggested;

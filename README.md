@@ -56,6 +56,23 @@ The language breakdown analysis tab also displays a table showing the Accepted P
   <img width="800" alt="image" src="https://github.com/github-copilot-resources/copilot-metrics-viewer/assets/3329307/38a4ff57-4974-4f60-a154-91db17b03678">
 </p>
 
+## Editors Breakdown Analysis
+
+The editors breakdown tab displays metrics grouped by the code editor used (VS Code, Neovim, JetBrains, Visual Studio, etc.). Similar to the language breakdown, it shows pie charts for the top 5 editors by accepted prompts and acceptance rate, as well as a detailed table with metrics for each editor.
+
+## AI Models Breakdown Analysis
+
+The models breakdown tab displays metrics grouped by the AI model used for code suggestions (GPT-4, GPT-4o, Claude 3.5 Sonnet, O1-preview, O1-mini, etc.). This allows you to compare the performance and adoption of different AI models within your organization.
+
+<p align="center">
+  <img width="800" alt="image" src="https://github.com/user-attachments/assets/84e85b21-529f-4830-a3a8-09d16ad933b5">
+</p>
+
+The models breakdown tab displays:
+- Total number of unique models used
+- Pie charts showing the top 5 models by accepted prompts and acceptance rate
+- A detailed table with Accepted Prompts, Accepted Lines of Code, and Acceptance Rate (%) for each model
+
 ## Copilot Chat Metrics
 
 <p align="center">
