@@ -1,6 +1,7 @@
-class BreakdownData {
+export class BreakdownData {
     language: string;
     editor: string;
+    model: string;
     suggestions_count: number;
     acceptances_count: number;
     lines_suggested: number;
@@ -13,14 +14,15 @@ class BreakdownData {
     constructor(data: any) {
       this.language = data.language;
       this.editor = data.editor;
-      this.suggestions_count = data.suggestions_count;
-      this.acceptances_count = data.acceptances_count;
-      this.lines_suggested = data.lines_suggested;
-      this.lines_accepted = data.lines_accepted;
-      this.active_users = data.active_users;
-      this.chat_acceptances = data.chat_acceptances;
-      this.chat_turns = data.chat_turns;
-      this.active_chat_users = data.active_chat_users;
+      this.model = data.model || '';
+      this.suggestions_count = data.suggestions_count || 0;
+      this.acceptances_count = data.acceptances_count || 0;
+      this.lines_suggested = data.lines_suggested || 0;
+      this.lines_accepted = data.lines_accepted || 0;
+      this.active_users = data.active_users || 0;
+      this.chat_acceptances = data.chat_acceptances || 0;
+      this.chat_turns = data.chat_turns || 0;
+      this.active_chat_users = data.active_chat_users || 0;
     }
   }
   

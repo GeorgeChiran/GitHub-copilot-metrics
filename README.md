@@ -70,6 +70,18 @@ The language breakdown analysis tab also displays a table showing the Accepted P
 
 4. **Total Active Copilot Chat Users:** a bar chart that illustrates the total number of users who have actively interacted with Copilot over the past 28 days.
 
+## Models Breakdown Analysis
+
+The **Models** tab displays a breakdown of Copilot usage by AI model. This works with the newer [GitHub Copilot Metrics API](https://docs.github.com/en/rest/copilot/copilot-metrics) (`/copilot/metrics`) which reports per-model data such as `default`, `gpt-4o`, `gpt-4o-mini`, or any custom models enabled in your organization.
+
+The application automatically tries the new `/copilot/metrics` endpoint first and falls back to the legacy `/copilot/usage` endpoint if the newer API is not available for your organization or enterprise.
+
+The Models breakdown shows:
+- **Number of Models** in use over the last 28 days
+- **Top 5 models by accepted prompts** (pie chart)
+- **Top 5 models by acceptance rate** (pie chart)
+- **Full breakdown table** with Accepted Prompts, Accepted Lines of Code, and Acceptance Rate (%) per model
+
 ## Seat Analysis 
 <p align="center">
   <img width="800" alt="image" src="https://github.com/github-copilot-resources/copilot-metrics-viewer/assets/54096296/51747194-df30-4bfb-8849-54a0510fffcb">
